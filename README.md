@@ -1,8 +1,12 @@
+<p align="center">
+  <img src="https://github.com/Aimbot01/Aimbot01/blob/main/banner for profile" width="100%" />
+</p>
+
 # Hi 👋, I'm Rohan Yadav
 
-### B.Tech CSE Student | Full Stack Developer | AI & Software Engineering Enthusiast
+### B.Tech CSE Student | Full Stack Developer | Cybersecurity & Gen AI Enthusiast
 
-I am a passionate Computer Science student focused on building scalable software solutions, full-stack web applications, and smart systems. I enjoy solving real-world problems using modern technologies and continuously improving my development skills.
+I am a passionate Computer Science student focused on building scalable software solutions, secure systems, and intelligent applications. I enjoy solving real-world problems through full-stack development, cybersecurity concepts, Gen AI, and data-driven technologies.
 
 ---
 
@@ -10,11 +14,13 @@ I am a passionate Computer Science student focused on building scalable software
 
 - 🎓 B.Tech in Computer Science (2024–2028)
 - 💻 Aspiring Software Engineer & Full Stack Developer
-- 🌱 Currently exploring MERN Stack, System Design & AI Development
-- 📊 Interested in Backend Systems, Databases, and App Development
+- 🔐 Interested in Cybersecurity & Secure System Design
+- 🤖 Exploring Generative AI, LLMs & AI Applications
+- 📊 Passionate about Data Analytics & Intelligent Systems
+- 🌱 Currently learning MERN Stack, System Design & Backend Engineering
 - 🤝 Active ACM Student Chapter Member
 - 🏆 Hackathon 2025 Second Prize Winner
-- 📚 Passionate about building production-ready applications
+- 📚 Focused on building impactful real-world projects
 
 ---
 
@@ -58,8 +64,11 @@ I am a passionate Computer Science student focused on building scalable software
 - REST APIs
 - Frontend & Backend Development
 - System Design Basics
+- Cybersecurity Fundamentals
 - UI/UX Design
 - App Development
+- Data Analytics
+- Generative AI Concepts
 
 ---
 
@@ -108,11 +117,14 @@ I am a passionate Computer Science student focused on building scalable software
 
 # 🌐 Connect With Me
 
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Rohan%20Yadav-blue?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/rohanyadav2804/)
+
 - 📧 Email: rohan07.1528@gmail.com
 - 🐙 GitHub: https://github.com/Aimbot01
+- 💼 LinkedIn: https://www.linkedin.com/in/rohanyadav2804/
 
 ---
 
 # ⚡ Fun Fact
 
-I enjoy building real-world applications, optimizing backend systems, and exploring AI-powered software solutions.
+I enjoy building secure and scalable applications, exploring AI-powered technologies, and solving real-world problems through software engineering.
