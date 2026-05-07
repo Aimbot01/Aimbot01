@@ -98,7 +98,7 @@ I am a passionate Computer Science student focused on building scalable software
 
 # 📈 GitHub Stats
 
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=Aimbot01&show_icons=true&theme=tokyonight)
+![Rohan's GitHub stats](https://github-readme-stats.vercel.app/api?username=Aimbot01&show_icons=true&theme=tokyonight)
 
 ![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=Aimbot01&layout=compact&theme=tokyonight)
 
