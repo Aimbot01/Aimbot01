@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/Aimbot01/Aimbot01/main/banner.png" width="100%" />
+  <img src="https://raw.githubusercontent.com/Aimbot01/Aimbot01/main/banner1.png" width="100%" />
 </p></p>
 
 # Hi 👋, I'm Rohan Yadav
