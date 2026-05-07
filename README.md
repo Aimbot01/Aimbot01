@@ -1,6 +1,6 @@
 <p align="center">
-  <img src="https://github.com/Aimbot01/Aimbot01/blob/main/https://github.com/Aimbot01/Aimbot01/banner.png" width="100%" />
-</p>
+  <img src="https://raw.githubusercontent.com/Aimbot01/Aimbot01/main/banner.png" width="100%" />
+</p></p>
 
 # Hi 👋, I'm Rohan Yadav
 
