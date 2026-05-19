@@ -72,54 +72,11 @@ I am a passionate Computer Science student focused on building scalable software
 
 ---
 
-# 📂 Featured Projects
+# 🚀 Featured Projects
 
-## 🍽️ Restaurant Order Management Web Application
-- Production-ready MERN stack restaurant ordering platform
-- Real-time order tracking system
-- Secure payment gateway integration
-- Scalable backend APIs using Node.js & MongoDB
-- Admin dashboard for order & inventory management
+<!-- PROJECTS:START -->
+<!-- PROJECTS:END -->
 
----
-
-## 🛒 E-Commerce Order Management System
-- Full-stack e-commerce backend system
-- Inventory and order lifecycle management
-- Dashboard analytics & reporting
-- Advanced DBMS implementation using MySQL
-- RESTful API architecture for scalable operations
-
----
-
-## 📱 Smart Attend
-- Smart attendance management Android application
-- Firebase authentication & database integration
-- Real-time attendance tracking system
-- Cloudinary integration for image handling
-- Secure student authentication workflows
-
----
-
-## 🌐 Smart Portfolio
-- Futuristic developer portfolio with modern UI/UX
-- Dynamic GitHub API integration for automatic project updates
-- Real-time repository synchronization
-- Glassmorphism design with smooth animations
-- Fully responsive and recruiter-focused architecture
-- Automated deployment using Netlify
-
----
-
-## 🤖 AI Code Reviewer Agent
-- AI-powered code review and analysis assistant
-- Detects code issues, optimization opportunities, and bugs
-- Generates intelligent code improvement suggestions
-- Supports scalable and modular architecture
-- Built using modern AI APIs and automation workflows
-- Enhances developer productivity and code quality
-
----
 
 # 🏆 Achievements
 

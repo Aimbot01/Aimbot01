@@ -1,0 +1,81 @@
+name: Auto Update Featured Projects
+
+on:
+  push:
+  schedule:
+    - cron: "0 */6 * * *"
+
+permissions:
+  contents: write
+
+jobs:
+  update-readme:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repo
+        uses: actions/checkout@v3
+
+      - name: Fetch Featured Repositories
+        run: |
+          curl -H "Accept: application/vnd.github.mercy-preview+json" \
+          -s https://api.github.com/users/Aimbot01/repos > repos.json
+
+      - name: Generate README Section
+        run: |
+          python3 << EOF
+          import json
+
+          with open("repos.json", "r") as f:
+              repos = json.load(f)
+
+          repos = sorted(
+              repos,
+              key=lambda x: x["updated_at"],
+              reverse=True
+          )
+
+          featured_projects = []
+
+          for repo in repos:
+              topics = repo.get("topics", [])
+
+              if "featured" in topics:
+                  featured_projects.append(
+                      f"## 🚀 [{repo['name']}]({repo['html_url']})\n"
+                      f"{repo.get('description', 'No description available')}\n"
+                  )
+
+          projects_content = "\n---\n".join(featured_projects)
+
+          with open("README.md", "r") as f:
+              readme = f.read()
+
+          start = "<!-- PROJECTS:START -->"
+          end = "<!-- PROJECTS:END -->"
+
+          new_readme = (
+              readme.split(start)[0]
+              + start
+              + "\n"
+              + projects_content
+              + "\n"
+              + end
+              + readme.split(end)[1]
+          )
+
+          with open("README.md", "w") as f:
+              f.write(new_readme)
+
+          EOF
+
+      - name: Commit Changes
+        run: |
+          git config --global user.name "github-actions"
+          git config --global user.email "actions@github.com"
+
+          git add README.md
+
+          git commit -m "Updated featured projects" || exit 0
+
+          git push
