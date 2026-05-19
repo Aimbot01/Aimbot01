@@ -41,9 +41,10 @@ jobs:
               topics = repo.get("topics", [])
 
               if "featured" in topics:
+                  description = repo.get("description") or "No description available"
                   featured_projects.append(
                       f"## 🚀 [{repo['name']}]({repo['html_url']})\n"
-                      f"{repo.get('description', 'No description available')}\n"
+                      f"{description}\n"
                   )
 
           projects_content = "\n---\n".join(featured_projects)
