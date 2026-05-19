@@ -75,6 +75,14 @@ I am a passionate Computer Science student focused on building scalable software
 # 🚀 Featured Projects
 
 <!-- PROJECTS:START -->
+## 🚀 [Qmanage](https://github.com/Aimbot01/Qmanage)
+- Production-ready MERN stack restaurant ordering platform - Real-time order tracking system - Secure payment gateway integration - Scalable backend APIs using Node.js & MongoDB - Admin dashboard for order & inventory management
+
+---
+## 🚀 [portfolio](https://github.com/Aimbot01/portfolio)
+- Futuristic developer portfolio with modern UI/UX - Dynamic GitHub API integration for automatic project updates - Real-time repository synchronization - Glassmorphism design with smooth animations - Fully responsive and recruiter-focused architecture - Automated deployment using Netlify
+
+---
 ## 🚀 [AI-code_review-Agent](https://github.com/Aimbot01/AI-code_review-Agent)
 - AI-powered code review and analysis assistant - Detects code issues, optimization opportunities, and bugs - Generates intelligent code improvement suggestions - Supports scalable and modular architecture - Built using modern AI APIs and automation workflows - Enhances developer productivity and code quality
 
