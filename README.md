@@ -75,6 +75,12 @@ I am a passionate Computer Science student focused on building scalable software
 # 🚀 Featured Projects
 
 <!-- PROJECTS:START -->
+## 🚀 [Smart-Attend](https://github.com/Aimbot01/Smart-Attend)
+None
+
+---
+## 🚀 [AI-code_review-Agent](https://github.com/Aimbot01/AI-code_review-Agent)
+None
 
 <!-- PROJECTS:END -->
 
