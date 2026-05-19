@@ -75,6 +75,7 @@ I am a passionate Computer Science student focused on building scalable software
 # 🚀 Featured Projects
 
 <!-- PROJECTS:START -->
+
 <!-- PROJECTS:END -->
 
 
