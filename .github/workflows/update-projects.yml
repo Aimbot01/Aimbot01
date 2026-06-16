@@ -14,73 +14,88 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout Repo
-        uses: actions/checkout@v3
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ github.token }}
 
-      - name: Fetch Featured Repositories
-  run: |
-    curl \
-      -H "Authorization: Bearer ${{ github.token }}" \
-      -H "Accept: application/vnd.github+json" \
-      -s https://api.github.com/users/Aimbot01/repos \
-      > repos.json
-
-      - name: Generate README Section
+      - name: Fetch Repositories
         run: |
-          python3 << EOF
+          curl \
+            -H "Authorization: Bearer ${{ github.token }}" \
+            -H "Accept: application/vnd.github+json" \
+            -s "https://api.github.com/users/Aimbot01/repos?per_page=100" \
+            > repos.json
+
+      - name: Generate Featured Projects Section
+        run: |
+          python3 << 'EOF'
           import json
 
-          with open("repos.json", "r") as f:
+          with open("repos.json", "r", encoding="utf-8") as f:
               repos = json.load(f)
+
+          if not isinstance(repos, list):
+              raise Exception(f"GitHub API Error: {repos}")
 
           repos = sorted(
               repos,
-              key=lambda x: x["updated_at"],
+              key=lambda x: x.get("updated_at", ""),
               reverse=True
           )
 
           featured_projects = []
 
           for repo in repos:
-              topics = repo.get("topics", [])
+              description = repo.get("description") or "No description available"
 
-              if "featured" in topics:
-                  description = repo.get("description") or "No description available"
-                  featured_projects.append(
-                      f"## 🚀 [{repo['name']}]({repo['html_url']})\n"
-                      f"{description}\n"
-                  )
+              featured_projects.append(
+                  f"## 🚀 [{repo['name']}]({repo['html_url']})\n"
+                  f"{description}\n"
+              )
 
-          projects_content = "\n---\n".join(featured_projects)
+          projects_content = "\n---\n".join(featured_projects[:5])
 
-          with open("README.md", "r") as f:
+          with open("README.md", "r", encoding="utf-8") as f:
               readme = f.read()
 
           start = "<!-- PROJECTS:START -->"
           end = "<!-- PROJECTS:END -->"
 
+          if start not in readme:
+              raise Exception("PROJECTS:START marker not found")
+
+          if end not in readme:
+              raise Exception("PROJECTS:END marker not found")
+
+          before = readme.split(start)[0]
+          after = readme.split(end)[1]
+
           new_readme = (
-              readme.split(start)[0]
+              before
               + start
               + "\n"
               + projects_content
               + "\n"
               + end
-              + readme.split(end)[1]
+              + after
           )
 
-          with open("README.md", "w") as f:
+          with open("README.md", "w", encoding="utf-8") as f:
               f.write(new_readme)
 
+          print("README updated successfully.")
           EOF
 
-      - name: Commit Changes
+      - name: Commit and Push Changes
         run: |
-          git config --global user.name "github-actions"
-          git config --global user.email "actions@github.com"
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
           git add README.md
 
-          git commit -m "Updated featured projects" || exit 0
+          git diff --staged --quiet && exit 0
+
+          git commit -m "Auto-update featured projects"
 
           git push
