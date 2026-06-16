@@ -75,6 +75,10 @@ I am a passionate Computer Science student focused on building scalable software
 # 🚀 Featured Projects
 
 <!-- PROJECTS:START -->
+## 🚀 [Aimbot01](https://github.com/Aimbot01/Aimbot01)
+No description available
+
+---
 ## 🚀 [Qmanage](https://github.com/Aimbot01/Qmanage)
 - Production-ready MERN stack restaurant ordering platform - Real-time order tracking system - Secure payment gateway integration - Scalable backend APIs using Node.js & MongoDB - Admin dashboard for order & inventory management
 
@@ -89,10 +93,6 @@ I am a passionate Computer Science student focused on building scalable software
 ---
 ## 🚀 [Smart-Attend](https://github.com/Aimbot01/Smart-Attend)
 - Smart attendance management Android application - Firebase authentication & database integration - Real-time attendance tracking system - Cloudinary integration for image handling - Secure student authentication workflows
-
----
-## 🚀 [EOMS](https://github.com/Aimbot01/EOMS)
-- Full-stack e-commerce backend system - Inventory and order lifecycle management - Dashboard analytics & reporting - Advanced DBMS implementation using MySQL - RESTful API architecture for scalable operations
 
 <!-- PROJECTS:END -->
 
