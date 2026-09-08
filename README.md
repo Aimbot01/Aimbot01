@@ -32,6 +32,7 @@ I am a passionate Computer Science student focused on building scalable software
 - C
 - JavaScript
 - SQL
+  
 
 ## Frameworks & Libraries
 - React.js
@@ -75,8 +76,9 @@ I am a passionate Computer Science student focused on building scalable software
 # 🚀 Featured Projects
 
 <!-- PROJECTS:START -->
-## 🚀 [Aimbot01](https://github.com/Aimbot01/Aimbot01)
-No description available
+## 🚀 ## 🎫 TicketSync
+Backend ticket management system built during my internship.
+[View Project](https://github.com/Aimbot01/TicketSync.git)
 
 ---
 ## 🚀 [Qmanage](https://github.com/Aimbot01/Qmanage)
